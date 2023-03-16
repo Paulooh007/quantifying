@@ -29,7 +29,6 @@ jobs:
     - name: Run script
       run: |
         pipenv run metmuseum/metmuseum_scratcher.py
-        pipenv run internetarchive/internetarchive_scratcher.py
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9 
