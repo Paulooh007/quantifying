@@ -1,8 +1,10 @@
 name: Daily Script
 
 on:
-  schedule:
-    - cron: '*/10 * * * *'  # Runs at midnight UTC every day
+  push:
+    branches:
+      - "automate-qtc"
+
   workflow_dispatch:     # Allows manual trigger
 
 jobs:
