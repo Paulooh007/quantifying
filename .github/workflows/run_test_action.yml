@@ -21,9 +21,7 @@ jobs:
           python-version: 3.9 # Specify the branch name
 
     - name: Run script
-      run: \
-      cd test_action/
-      python test.py
+      run: python test_action/test.py
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9 
