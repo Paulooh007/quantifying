@@ -1,4 +1,4 @@
-name: Daily Script
+name: Fetch data from sources
 
 on:
   push:
@@ -24,12 +24,15 @@ jobs:
       run: |
         pip install pipenv
         pipenv install --dev
+        pipenv shell
 
 
     - name: Run script
       run: |
-        pipenv run metmuseum/metmuseum_scratcher.py
-        pipenv run wikicommons/wikicommons_scratcher.py
+        python metmuseum/metmuseum_scratcher.py
+        python wikicommons/wikicommons_scratcher.py
+        python wikipedia/wikipedia_scratcher.py
+        python internetarchive/internetarchive_scratcher.py
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9 
