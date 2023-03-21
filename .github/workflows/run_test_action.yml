@@ -1,9 +1,8 @@
 name: Fetch data from sources
 
 on:
-  push:
-    branches:
-      - "automate-qtc"
+  schedule:
+    - cron: '0 0 * * *' # runs at midnight every day
 
   workflow_dispatch:     # Allows manual trigger
 
@@ -37,6 +36,6 @@ jobs:
     - name: Commit changes
       uses: EndBug/add-and-commit@v9 
       with:
-        message: 'Run test script'
+        message: 'Daily generated data'
         new_branch: automate-qtc
 
