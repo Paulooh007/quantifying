@@ -29,10 +29,10 @@ jobs:
 
     - name: Run script
       run: |
-        pipenv run metmuseum/metmuseum_scratcher.py
-        pipenv run wikicommons/wikicommons_scratcher.py
-        pipenv run wikipedia/wikipedia_scratcher.py
-        # pipenv run internetarchive/internetarchive_scratcher.py
+        pipenv run metmuseum
+        pipenv run wikicommons
+        pipenv run internetarchive
+        pipenv run wikipedia
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9 

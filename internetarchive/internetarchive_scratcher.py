@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """
 This file is dedicated to obtain a .csv record report for internetarchive
 data.

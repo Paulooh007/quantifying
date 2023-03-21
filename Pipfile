@@ -25,3 +25,9 @@ isort = "*"
 
 [requires]
 python_version = "3.10"
+
+[scripts]
+internetarchive = "python internetarchive/internetarchive_scratcher.py"
+wikicommons = "python wikicommons/wikicommons_scratcher.py"
+metmuseum = "python metmuseum/metmuseum_scratcher.py"
+wikipedia = "python wikipedia/wikipedia_scratcher.py"
