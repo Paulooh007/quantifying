@@ -31,7 +31,7 @@ jobs:
         pipenv run metmuseum
         pipenv run wikicommons
         pipenv run internetarchive
-        pipenv run wikipedia
+       # pipenv run wikipedia
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9 
